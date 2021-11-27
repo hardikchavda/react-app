@@ -1,0 +1,9 @@
+*{margin: 0;}
+.heading{
+    color: red;    
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
