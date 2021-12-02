@@ -3,16 +3,10 @@ import React from "react";
 import "./index.css";
 import Heading from "./Heading";
 import * as data from "./ES6";
-const prgname = "Er. Hardik Chavda";
-const link = "http://hardikchavda.in/";
+import Images from "./Images";
+import sdata from "./Sdata"
 
-function Images(props) {
-    return (
-        <a href={link}>
-            <img src={props.imgData} alt={props.altData} />
-        </a>
-    );
-}
+const prgname = "Er. Hardik Chavda";
 
 function App() {
 
@@ -20,14 +14,20 @@ function App() {
         <Heading />
         <h1>Welcome to new Example. By {prgname}</h1>
         <div className="img">
-            <Images imgData="https://picsum.photos/200"
-                altData="random"
+            <Images
+                imgData={sdata[0].imgData}
+                altData={sdata[0].altData}
+                linkData={sdata[0].linkData}
             />
-            <Images imgData="https://picsum.photos/id/300/200"
-                altData="Fixed Id:300"
+            <Images
+                imgData={sdata[1].imgData}
+                altData={sdata[1].altData}
+                linkData={sdata[1].linkData}
             />
-            <Images imgData="https://picsum.photos/id/1026/200"
-                altData="Fixed Id:1026"
+            <Images
+                imgData={sdata[2].imgData}
+                altData={sdata[2].altData}
+                linkData={sdata[2].linkData}
             />
         </div>
         <table className="table table-bordered">
