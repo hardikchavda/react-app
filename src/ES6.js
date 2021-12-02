@@ -8,7 +8,7 @@ function information() {
 }
 
 function marks() {
-    let m1 = 50;
+    let m1 = 60;
     let m2 = 50;
     let m3 = 40;
     let tot = m1 + m2 + m3;

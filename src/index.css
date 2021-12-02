@@ -1,9 +1,9 @@
 *{margin: 0;}
 .heading{
-    color: red;    
+    color: aqua;    
 }
 
 .img{
-    display: flex;
+    display: flex;    
     justify-content: center;
 }
