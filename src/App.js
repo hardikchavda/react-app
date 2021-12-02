@@ -4,7 +4,7 @@ import "./index.css";
 import Heading from "./Heading";
 import * as data from "./ES6";
 import Images from "./Images";
-import sdata from "./Sdata"
+import Adata from "./Sdata"
 
 const prgname = "Er. Hardik Chavda";
 
@@ -15,19 +15,19 @@ function App() {
         <h1>Welcome to new Example. By {prgname}</h1>
         <div className="img">
             <Images
-                imgData={sdata[0].imgData}
-                altData={sdata[0].altData}
-                linkData={sdata[0].linkData}
+                imgData={Adata[0].imgData}
+                altData={Adata[0].altData}
+                linkData={Adata[0].linkData}
             />
             <Images
-                imgData={sdata[1].imgData}
-                altData={sdata[1].altData}
-                linkData={sdata[1].linkData}
+                imgData={Adata[1].imgData}
+                altData={Adata[1].altData}
+                linkData={Adata[1].linkData}
             />
             <Images
-                imgData={sdata[2].imgData}
-                altData={sdata[2].altData}
-                linkData={sdata[2].linkData}
+                imgData={Adata[2].imgData}
+                altData={Adata[2].altData}
+                linkData={Adata[2].linkData}
             />
         </div>
         <table className="table table-bordered">
