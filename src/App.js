@@ -14,21 +14,15 @@ function App() {
         <Heading />
         <h1>Welcome to new Example. By {prgname}</h1>
         <div className="img">
-            <Images
-                imgData={Adata[0].imgData}
-                altData={Adata[0].altData}
-                linkData={Adata[0].linkData}
-            />
-            <Images
-                imgData={Adata[1].imgData}
-                altData={Adata[1].altData}
-                linkData={Adata[1].linkData}
-            />
-            <Images
-                imgData={Adata[2].imgData}
-                altData={Adata[2].altData}
-                linkData={Adata[2].linkData}
-            />
+            {Adata.map((val, index) => {
+                return (
+                    <Images
+                        imgData={val.imgData}
+                        altData={val.altData}
+                        linkData={val.linkData}
+                    />
+                );
+            })}
         </div>
         <table className="table table-bordered">
             <tbody>
